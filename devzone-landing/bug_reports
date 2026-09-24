@@ -25,9 +25,7 @@ Form accepts 1 character. No error message. Request is sent.
 Message "Message sent successfully!" appears.
 
 ### Evidence
-- Screenshot: `https://github.com/maru-catherina/QA_Portfolio/blob/main/devzone-landing/evidence/-1char.png`
-
-
+- [Screenshot] (https://github.com/maru-catherina/QA_Portfolio/blob/main/devzone-landing/evidence/BUG-01-name-1char.png)
 ### Notes
 - Check validation for edge case: 1 char, empty, spaces
 - Probably missing `minlength="2"` or JS check `if (name.length < 2)`
