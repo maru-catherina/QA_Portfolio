@@ -1,1 +1,33 @@
+# BUG-01: Contact form accepts Name with 1 character
 
+**Severity:** Minor  
+**Priority:** Medium  
+**Type:** Functional / Validation  
+**Environment:** Chrome 126.0 / Windows 11, iPhone 14 (Safari)
+
+### Description
+Name field allows submission with less than 2 characters, but according to validation rules it should show an error.
+
+### Steps to Reproduce
+1. Open landing page
+2. Scroll to Contact form (#contact)
+3. Enter Name: `A`
+4. Enter valid Phone: `12345678901`
+5. Enter valid Email: `test@test.com`
+6. Click `Send`
+
+### Expected Result
+Error message under Name field: "Please fill... minimum 2 characters"
+Form is NOT submitted.
+
+### Actual Result
+Form accepts 1 character. No error message. Request is sent.
+Message "Message sent successfully!" appears.
+
+### Evidence
+- Screenshot: `https://github.com/maru-catherina/QA_Portfolio/blob/main/devzone-landing/evidence/-1char.png`
+
+
+### Notes
+- Check validation for edge case: 1 char, empty, spaces
+- Probably missing `minlength="2"` or JS check `if (name.length < 2)`
