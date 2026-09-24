@@ -1,17 +1,24 @@
-| ID | Scenario | Steps | Expected | Result |
-| :--- | :--- | :--- | :--- | :--- |
-|TC-01  | Header loads and displays logo and name of company | DevZone Studio logo and name visible in 1s | DevZone Studio logo and name visible in 1s | PASS |
-| TC-02 | Action button routes to contact form | After pushing the button user redirected to contact form |After pushing the button user redirected to contact form  | PASS |
-| TC-03 | Navigation links route correctly | User redirected to correct section without error | User redirected to correct section without error | PASS |
-| TC-04 | Portfolio images zoom on hover | Images scale up by ~20% with smooth transition| On hovering images scale up by ~20% with smooth transition | PASS |
-| TC-05 | Watch Preview button opens video modal | Video player appears, video autoplays, background overlay is displayed| Video player appears, video autoplays, background overlay is displayed | PASS |
-| TC-06 | Hide video button closes video modal | Video modal disappears, video stops playing, user returns to portfolio section| Video modal disappears, video stops playing | PASS |
-| TC-07 | Contact form - Name field validation - minimum length | Error message appears if less than 2 characters: "Please fill | Name field allows any number of characters | FAIL |
-| TC-08 | Contact form - Phone field format validation | Invalid format shows error| Input not correct format of phone number(less, or more then 11 digits) shows the error | PASS |
-| TC-09 | Contact form - Email field format validation | Invalid email shows error: "Please enter a valid email address (e.g. name@domain.com)"| Invalid email format calls the error. Form is not submitted| PASS |
-| TC-10 | Preferred contact method toggle switches correctly | Selected toggle becomes active, other options become inactive. Selection is saved| The switcher  work expectable | PASS |
-| TC-11 | Contact form successful submission |After valid data and clicking Send, success message is shown: "Message sent successfully!" Form fields are cleared | After correct filling all fields, and pushing the button "Send" the form sent. The message "Message sent successfully!" is appeared  | PASS 
-| TC-12 | Mobile menu opens on hamburger click | Menu slide open, nav links visible| Mobile menu opens on hamburger click | PASS |
-| TC-13 | Mobile menu closes on hamburger click again | Menu slide closed, nav links hided| Mobile menu closes on humburger click | PASS |
-| TC-04 | Mobile menu closes on outside click |Menu slide closed, when clicking outside navnav links visible | Mobile menu closes on  click outside the menu area | PASS |
+# Test Cases — DevZone Landing
+
+**Environment:** Chrome 126, Firefox, Safari / Desktop & Mobile (iPhone 14, S23 Ultra)
+**URL:** [devzone link]
+
+| ID | Scenario | Priority | Steps | Expected Result | Actual Result | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| TC-01 | Header loads logo + name | Low | 1. Open landing | Logo & "DevZone Studio" visible within 1s | As expected | PASS |
+| TC-02 | CTA routes to contact form | High | 1. Click main CTA | Smooth scroll to #contact form | As expected | PASS |
+| TC-03 | Navigation anchors work | Medium | 1. Click each nav link | Scroll to correct section, no 404 | As expected | PASS |
+| TC-04 | Portfolio zoom on hover | Low | 1. Hover portfolio image | Image scales ~20% with transition | As expected | PASS |
+| TC-05 | Watch Preview opens modal | High | 1. Click Watch Preview | Modal + overlay + autoplay | As expected | PASS |
+| TC-06 | Hide video closes modal | High | 1. Click Hide / X / ESC | Modal closes, video stops | As expected | PASS |
+| TC-07 | Contact form - Name validation | Medium | 1. Enter 1 char in Name 2. Submit | Error: "Min 2 characters" | No error, accepts 1 char | **FAIL** -> [BUG-01](https://github.com/maru-catherina/QA_Portfolio/blob/main/devzone-landing/bug_reports)|
+| TC-08 | Contact form - Phone format | High | 1. Enter <11 / >11 digits 2. Submit | Error for invalid format | Error shown | PASS |
+| TC-09 | Contact form - Email format | High | 1. Enter `test@` 2. Submit | Error: "Please enter valid email..." | Error shown, not submitted | PASS |
+| TC-10 | Contact method toggle | Medium | 1. Switch Phone/Email/Telegram | Only one active, value saved | As expected | PASS |
+| TC-11 | Contact form successful submit | Critical | 1. Fill valid data 2. Click Send | "Message sent successfully!" + fields cleared | As expected | PASS |
+| TC-12 | Mobile menu open | Medium | 1. Resize to 375px 2. Click hamburger | Menu slides in | As expected | PASS |
+| TC-13 | Mobile menu close (hamburger) | Medium | 1. Click hamburger again | Menu slides out | As expected | PASS |
+| TC-14 | Mobile menu close (outside) | Low | 1. Open menu 2. Click outside | Menu closes | As expected | PASS |
+
+
 
