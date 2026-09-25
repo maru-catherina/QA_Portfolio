@@ -19,4 +19,4 @@
 
 **Conclusion:** Update from a month ago is stable, no new crashes introduced after release. No regressions detected in production.
 
-**Evidence:** [Screenshot](https://github.com/maru-catherina/QA_Portfolio/blob/main/white-noise-app/play-console-no-crashes.jpg)
+**Evidence:** ![Screenshot](https://github.com/maru-catherina/QA_Portfolio/blob/main/white-noise-app/play-console-no-crashes.jpg)
