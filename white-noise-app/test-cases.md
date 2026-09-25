@@ -6,7 +6,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | TC-WN-01 | Install from Play Store | Android device | 1. Open Play Store 2. Install White Noise | App installed | PASS | - |
 | TC-WN-02 | Play sound | App installed | 1. Open app 2.Choose the sound 3. Tap Play | Sound plays | PASS | - |
-| TC-WN-03 | Stop sound | Sound stops | 1. Tap Stop  | After tap the stop button the sound stopped  | PASS | - |
+| TC-WN-03 | Stop sound | Sound playing | 1. Tap Stop  | After tap the stop button the sound stopped  | PASS | - |
 | TC-WN-04 | Timer 15m | App open | 1. Set 15m timer 2. Start | Stops after 15m | PASS | - |
 | TC-WN-05 | Timer 30m | App open | 1. Set 30m timer 2. Start | Stops after 30m | PASS | - |
 | TC-WN-06 | Timer 60m | App open | 1. Set 60m timer 2. Start | Stops after 60m | PASS | - |
