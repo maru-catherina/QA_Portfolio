@@ -23,7 +23,7 @@ Continuous uninterrupted playback while foreground service is active.
 - Frequency: intermittent, ~1-2 times per 7-day cycle.
 
 ### Evidence
-- Screenshot: 'white-noise-app/bug_reports/evidence/no-results.png`
+ [Screenshot](https://github.com/maru-catherina/QA_Portfolio/blob/main/white-noise-app/play-console-no-crashes.jpg)
 
 
 ### Tested on
